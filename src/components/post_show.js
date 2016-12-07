@@ -16,7 +16,6 @@ class PostsShow extends Component {
 		this.props.deletePost(this.props.params.id).then(() => {this.context.router.push('/')})
 	}
 	render(){
-		console.log(this.props.params);
 		const {post} = this.props;
 		if(!post) {
 			return (<div>Loading...</div>);
